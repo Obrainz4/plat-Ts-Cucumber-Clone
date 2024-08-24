@@ -1,0 +1,20 @@
+{
+    "default": {
+        "formatOptions": {
+            "snippetInterface": "async-await"
+        },
+        "paths": [
+            "src/test/features/login.feature"
+             
+        ],
+        "publishQuiet":true,
+        "dryRun": false,
+        "require": ["steps/loginSteps.ts",
+                     "src/hooks/hooks.ts"
+        ],
+        "requireModule": ["ts-node/register"],
+        "format": ["html:cucmber-report.html"]
+
+    }
+}
+
